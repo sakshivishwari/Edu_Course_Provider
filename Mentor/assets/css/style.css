@@ -502,11 +502,15 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 28px;
+}
+.about .content p{
+  font-size: 24px;
 }
 .about .content ul {
   list-style: none;
   padding: 0;
+
 }
 .about .content ul li {
   padding-bottom: 10px;
@@ -550,7 +554,7 @@ section {
 }
 .courses .course-content h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
 }
 .courses .course-content h3 a {
   color: #37423b;
@@ -561,7 +565,7 @@ section {
   color: #777777;
 }
 .courses .course-content h4 {
-  font-size: 14px;
+  font-size: 24px;
   background: #5fcf80;
   padding: 7px 14px;
   color: #fff;
