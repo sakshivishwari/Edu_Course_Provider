@@ -573,7 +573,7 @@ body {
   .courses .course-content h4:hover{
   background-color: #5a6c60;
   }
-  
+
   
   /* ------------------------------------------------------- 
      # HtmlCourse page 
@@ -612,23 +612,26 @@ body {
   }
   @media (max-width:768px) {
     
-    .course-1{
+    .course-details{
       width: 20px;
     }
   
-    .Course-vedio{
+    /* .course-vedio{
       padding: 50%;
-    }
+    } */
     iframe{
       width: 350px;
       height: 300px;
-      padding: 20%;
+      padding: 10%;
     }
-    .course1-content{
+    .course-detail-content{
       width: 300px;
       padding: 10px;
       font-size: 15px;
     }
+  .css-img{
+    width: 300px;
+  }
   }
   
   

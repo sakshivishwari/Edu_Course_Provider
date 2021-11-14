@@ -57,115 +57,87 @@
       </div>
     </header>
     <!-- End Header -->
-
-    <!-- Course-2 -->
+    <!-- Course-6 -->
     <div class="course-details">
       <div class="course-vedio">
         <iframe
           width="750"
           height="500"
-          src="https://www.youtube.com/embed/yfoY53QXEnI"
+          src="https://www.youtube.com/embed/fBNz5xF-Kx4"
           frameborder="0"
         ></iframe>
       </div>
       <div class="course-detail-content">
-        <h1 class="headings">CSS Introduction</h1>
-        <p>CSS is the language we use to style a Web page.</p>  <hr>
-        <h3 class="headings">What is CSS?</h3>
+        <h1 class="headings">Node.js Introduction</h1>
+        <p>Node.js is an open source server environment.</p>
+        <p>Node.js allows you to run JavaScript on the server.</p>
+        <hr>
+        <h3 class="headings">What is Node.js?</h3>
         <ul>
-          <li>CSS stands for Cascading Style Sheets</li>
+          <li>Node.js is an open source server environment</li>
+          <li>Node.js is free</li>
           <li>
-            CSS describes how HTML elements are to be displayed on screen,
-            paper, or in other media
+            Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X,
+            etc.)
           </li>
-          <li>
-            CSS saves a lot of work. It can control the layout of multiple web
-            pages all at once
-          </li>
-          <li>External stylesheets are stored in CSS files</li>
+          <li>Node.js uses JavaScript on the server</li>
         </ul>
         <hr>
-        <h3 class="headings">Why Use CSS?</h3>
+        <h3 class="headings">Why Node.js?</h3>
+        <p><strong>Node.js uses asynchronous programming!</strong></p>
         <p>
-          CSS is used to define styles for your web pages, including the design,
-          layout and variations in display for different devices and screen
-          sizes.
+          A common task for a web server can be to open a file on the server and
+          return the content to the client.
         </p>
-      
-        <h5 class="headings">CSS Example</h5>
+        <p>Here is how PHP or ASP handles a file request:</p>
+        <ol>
+          <li>Sends the task to the computer's file system.</li>
+          <li>Waits while the file system opens and reads the file.</li>
+          <li>Returns the content to the client.</li>
+          <li>Ready to handle the next request.</li>
+        </ol>
+
+        <p>Here is how Node.js handles a file request:</p>
+        <ol>
+          <li>Sends the task to the computer's file system.</li>
+          <li>Ready to handle the next request.</li>
+          <li>
+            When the file system has opened and read the file, the server
+            returns the content to the client.
+          </li>
+        </ol>
         <p>
-          body { <br>
-             background-color: lightblue; <br>
-             } <br>
-             h1 { color: white; <br>
-                  text-align: center; } <br>
-              p { font-family: verdana;<br>
-             font-size: 20px; } <br>
+          Node.js eliminates the waiting, and simply continues with the next
+          request.
         </p>
-        <hr>
-        <h3 class="headings">CSS Solved a Big Problem</h3>
         <p>
-          HTML was NEVER intended to contain tags for formatting a web page! <br>
-
-          HTML was created to describe the content of a web page, like:  <br>
-          &lth1&gtThis is a heading&lt/h1&gt    <br>
-          
-          &ltp&gtThis is a paragraph.&lt/p&gt  <br>
-          
-          When tags like &ltfont&gt, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. <br>
-           Development of large websites, where fonts and color information were added to every single page, became a long and expensive process. <br>
-          
-          To solve this problem, the World Wide Web Consortium (W3C) created CSS. <br>
-          
-          CSS removed the style formatting from the HTML page!  <br>
-
-
+          Node.js runs single-threaded, non-blocking, asynchronously
+          programming, which is very memory efficient.
         </p>
         <hr>
-        <h3 class="headings">CSS Saves a Lot of Work!</h3>
-         <p>
+        <h3 class="headings">What Can Node.js Do?</h3>
+        <ul>
+          <li>
+            Node.js files contain tasks that will be executed on certain events
+          </li>
+          <li>
+            A typical event is someone trying to access a port on the serve
+          </li>
+          <li>
+            Node.js files must be initiated on the server before having any
+            effect
+          </li>
+          <li>Node.js files have extension ".js"</li>
+        </ul>
 
-          The style definitions are normally saved in external .css files.  <br>
 
-          With an external stylesheet file, you can change the look of an entire website by changing just one file!
-         </p>
-         <hr>
-         <h3 class="headings">CSS Syntax</h3>
-         <p>A CSS rule consists of a selector and a declaration block.</p>
-         <p>
-          <img  class=" css-img"src="https://www.w3schools.com/css/img_selector.gif" alt="css syntax">
-         </p>
-           <p>
-            The selector points to the HTML element you want to style. <br> <br>
-
-            The declaration block contains one or more declarations separated by semicolons. <br> <br>
-            
-            Each declaration includes a CSS property name and a value, separated by a colon. <br> <br>
-            
-            Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces. <br>
-           </p>
-           <h5 class="headings">Example</h5>
-           <p>
-            In this example all &ltp&gt elements will be center-aligned, with a red text color:  <br>
-
-              p {   <br>
-                color: red; <br>
-                  text-align: center; <br>
-              }
-           </p>
-
-           <h5 class="headings">Example Explained</h5>
-           <ul>
-           <li>p is a selector in CSS (it points to the HTML element you want to style: &ltp&gt).</li>
-           <li>color is a property, and red is the property value</li>
-            <li>text-align is a property, and center is the property value</li>
-
-           </ul>
-           <button type="button"> <a href="https://www.w3schools.com/css/default.asp"> Learn More</a></button>
-          </div>
+        <button type="button"> <a href="https://www.w3schools.com/nodejs/nodejs_intro.asp"> Learn More</a></button>
+      </div>
     </div>
+    <!-- End of Course-6 -->
 
-    <!-- Footer start -->
+    <!-- footer -->
+
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
@@ -180,25 +152,29 @@
                 <strong>Email:</strong> bugsmashers@gmail.com<br />
               </p>
             </div>
-  
+
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="index.html">Home</a>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="index.html">Home</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="about.html">About us</a>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="about.html">About us</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="courses.html">courses</a>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="courses.html">courses</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="contact.html">contact</a>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="contact.html">contact</a>
                 </li>
               </ul>
             </div>
-  
+
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Course Provided</h4>
               <ul>
@@ -221,19 +197,20 @@
                   <a href="#">Angular</a>
                 </li>
                 <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Nodejs</a>
-              </li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Nodejs</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-  
+
       <div class="container d-md-flex py-4">
         <div class="me-md-auto text-center text-md-start">
           <div class="copyright">
-            &copy; Copyright <strong><span>BugSmashers</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>BugSmashers</span></strong
+            >. All Rights Reserved
           </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -246,19 +223,22 @@
       </div>
     </footer>
     <!-- End Footer -->
-  
+
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-  
   </body>
 </html>
