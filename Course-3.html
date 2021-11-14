@@ -58,114 +58,124 @@
     </header>
     <!-- End Header -->
 
-    <!-- Course-2 -->
+    <!-- Course-3 -->
+
     <div class="course-details">
       <div class="course-vedio">
         <iframe
           width="750"
           height="500"
-          src="https://www.youtube.com/embed/yfoY53QXEnI"
+          src="https://www.youtube.com/embed/hdI2bqOjy3c"
           frameborder="0"
         ></iframe>
       </div>
       <div class="course-detail-content">
-        <h1 class="headings">CSS Introduction</h1>
-        <p>CSS is the language we use to style a Web page.</p>  <hr>
-        <h3 class="headings">What is CSS?</h3>
-        <ul>
-          <li>CSS stands for Cascading Style Sheets</li>
-          <li>
-            CSS describes how HTML elements are to be displayed on screen,
-            paper, or in other media
-          </li>
-          <li>
-            CSS saves a lot of work. It can control the layout of multiple web
-            pages all at once
-          </li>
-          <li>External stylesheets are stored in CSS files</li>
-        </ul>
-        <hr>
-        <h3 class="headings">Why Use CSS?</h3>
+        <h1 class="headings">JavaScript Introduction</h1>
+     
+       <p>
+        JavaScript is the world's most popular programming language. </p>
+
+       <p> JavaScript is the programming language of the Web. </p>
+        
+       <p> JavaScript is easy to learn. </p>
+        
+       <p> This tutorial will teach you JavaScript from basic to advanced.</p> <hr>
+       <h3 class="headings">JavaScript Where To</h3>
+       <h4 >The &ltscript&gt Tag</h4>
+       <p>In HTML, JavaScript code is inserted between &ltscript&gt and &lt/script&gt tags.</p>
+       <h5>Example</h5>
         <p>
-          CSS is used to define styles for your web pages, including the design,
-          layout and variations in display for different devices and screen
-          sizes.
-        </p>
-      
-        <h5 class="headings">CSS Example</h5>
-        <p>
-          body { <br>
-             background-color: lightblue; <br>
-             } <br>
-             h1 { color: white; <br>
-                  text-align: center; } <br>
-              p { font-family: verdana;<br>
-             font-size: 20px; } <br>
-        </p>
+          &ltscript&gt <br>
+            document.getElementById("demo").innerHTML = "My First JavaScript"; <br>
+            &lt/script&gt
+        </p>  <hr>
+       <h3 class="headings">JavaScript Functions and Events</h3>
+       <p>A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+
+        For example, a function can be called when an event occurs, like when the user clicks a button.</p>
         <hr>
-        <h3 class="headings">CSS Solved a Big Problem</h3>
-        <p>
-          HTML was NEVER intended to contain tags for formatting a web page! <br>
+        <h3 class="headings">JavaScript in &lthead&gt or &ltbody&gt</h3>
+        <p>You can place any number of scripts in an HTML document.
 
-          HTML was created to describe the content of a web page, like:  <br>
-          &lth1&gtThis is a heading&lt/h1&gt    <br>
-          
-          &ltp&gtThis is a paragraph.&lt/p&gt  <br>
-          
-          When tags like &ltfont&gt, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. <br>
-           Development of large websites, where fonts and color information were added to every single page, became a long and expensive process. <br>
-          
-          To solve this problem, the World Wide Web Consortium (W3C) created CSS. <br>
-          
-          CSS removed the style formatting from the HTML page!  <br>
-
-
+          Scripts can be placed in the &ltbody&gt, or in the &lthead&gt section of an HTML page, or in both.
         </p>
-        <hr>
-        <h3 class="headings">CSS Saves a Lot of Work!</h3>
-         <p>
-
-          The style definitions are normally saved in external .css files.  <br>
-
-          With an external stylesheet file, you can change the look of an entire website by changing just one file!
-         </p>
          <hr>
-         <h3 class="headings">CSS Syntax</h3>
-         <p>A CSS rule consists of a selector and a declaration block.</p>
-         <p>
-          <img  class=" css-img"src="https://www.w3schools.com/css/img_selector.gif" alt="css syntax">
+         <h3 class="headings">External JavaScript</h3>
+         <p>Scripts can also be placed in external files:</p>
+         <h5>External file: myScript.js</h5>
+         <p>function myFunction() {  <br>
+          document.getElementById("demo").innerHTML = "Paragraph changed."; <br>
+           } 
          </p>
+
+          <p>
+            External scripts are practical when the same code is used in many different web pages. <br>
+
+             JavaScript files have the file extension .js.  <br>
+
+             To use an external script, put the name of the script file in the src (source) attribute of a &ltscript&gt tag:
+               
+           <h5>Example</h5> 
+           &ltscript src="myScript.js"&gt&lt/script&gt
+          </p>
+          <hr>
+
+          <h3 class="headings">JavaScript Programs</h3>
+          <p>A computer program is a list of "instructions" to be "executed" by a computer. </p>
+
+           <p> In a programming language, these programming instructions are called statements. </p>            
+           <p> A JavaScript program is a list of programming statements.</p>
+            <hr>
+          <h3 class="headings">JavaScript Statements</h3>
            <p>
-            The selector points to the HTML element you want to style. <br> <br>
+               JavaScript statements are composed of:        <br>
 
-            The declaration block contains one or more declarations separated by semicolons. <br> <br>
-            
-            Each declaration includes a CSS property name and a value, separated by a colon. <br> <br>
-            
-            Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces. <br>
+              Values, Operators, Expressions, Keywords, and Comments. <br>
+
+              This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo": <br>
            </p>
-           <h5 class="headings">Example</h5>
-           <p>
-            In this example all &ltp&gt elements will be center-aligned, with a red text color:  <br>
+        <h5>Example</h5>
+       <p>document.getElementById("demo").innerHTML = "Hello Dolly.";</p><hr>
+      <h3 class="headings">JavaScript Values</h3>
+      <p>The JavaScript syntax defines two types of values:</p>
+      <ul>
+        <li>Fixed values</li>
+       <li>Variable values</li>
+      </ul>
+      <p>Fixed values are called Literals. <br>
 
-              p {   <br>
-                color: red; <br>
-                  text-align: center; <br>
-              }
-           </p>
+        Variable values are called Variables.</p> <hr>
+      <h3 class="headings">JavaScript Literals</h3>
+      <p>The two most important syntax rules for fixed values are:</p>
+      <ol>
 
-           <h5 class="headings">Example Explained</h5>
-           <ul>
-           <li>p is a selector in CSS (it points to the HTML element you want to style: &ltp&gt).</li>
-           <li>color is a property, and red is the property value</li>
-            <li>text-align is a property, and center is the property value</li>
+        <li> <strong>Numbers</strong> are written with or without decimals: <br>
+          10.50 <br>
 
-           </ul>
-           <button type="button"> <a href="https://www.w3schools.com/css/default.asp"> Learn More</a></button>
-          </div>
+          1001</li>
+
+          <li> <strong>Strings</strong> are text, written within double or single quotes: <br>
+            "John Doe" <br>
+
+            'John Doe'</li>
+      </ol> <hr>
+      <h3 class="headings">JavaScript Variables</h3>
+      <p>In a programming language, variables are used to store data values. </p>
+
+       <p> JavaScript uses the keywords var, let and const to declare variables. </p>
+        
+        <p> An equal sign is used to assign values to variables. </p>
+        
+       <p> In this example, x is defined as a variable. Then, x is assigned (given) the value 6:</p>
+       <p>
+        let x; <br>
+        x = 6;
+       </p>
+       <button type="button"> <a href="https://www.w3schools.com/js/js_intro.asp"> Learn More</a></button>
     </div>
 
-    <!-- Footer start -->
+    <!-- ENd of Course-3 -->
+    <!-- footer -->
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
@@ -180,7 +190,7 @@
                 <strong>Email:</strong> bugsmashers@gmail.com<br />
               </p>
             </div>
-  
+    
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
@@ -198,7 +208,7 @@
                 </li>
               </ul>
             </div>
-  
+    
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Course Provided</h4>
               <ul>
@@ -229,7 +239,7 @@
           </div>
         </div>
       </div>
-  
+    
       <div class="container d-md-flex py-4">
         <div class="me-md-auto text-center text-md-start">
           <div class="copyright">
@@ -246,19 +256,22 @@
       </div>
     </footer>
     <!-- End Footer -->
-  
+    
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
+    
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
+    
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-  
-  </body>
-</html>
+    
+    
+      </body>
+    </html>
+    
+   
