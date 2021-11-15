@@ -43,11 +43,11 @@
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
         <img  class=" logo" src="{{url_for('static', filename='assets/img/online-lesson.png')}}" alt="main-icon">
-        <h1 class="logo-text me-auto"><a href="index.html">Learners</a></h1>
+        <h1 class="logo-text me-auto"><a href="#">Learners</a></h1>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{{url_for('home')}}">Home</a></li>
             <li><a href="{{url_for('about')}}">About</a></li>
             <li><a href="{{url_for('courses')}}">Courses</a></li>
 
