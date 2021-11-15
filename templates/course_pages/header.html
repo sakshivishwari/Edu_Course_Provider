@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Course-details</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{{url_for('static', filename='assets/img/online-lesson.png')}}" rel="icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="{{url_for('static', filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet" />
+    <link
+      href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}"
+      rel="stylesheet"
+    />
+    <link href="{{url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="{{url_for('static', filename='assets/css/style.css')}}" rel="stylesheet" />
+  </head>
+
+  <body>
+   <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <img  class=" logo" src="{{url_for('static', filename='assets/img/online-lesson.png')}}" alt="main-icon">
+        <h1 class="logo-text me-auto"><a href="#">Learners</a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+            <li><a href="{{url_for('courses')}}">Courses</a></li>
+
+            <li><a href="{{url_for('contact')}}">Contact</a></li>
+            {% if logged_in.__dict__ %}
+                <li><a href="{{url_for('logout')}}">Logout</a></li>
+              <li><a><img class="rounded-circle" src="{{current_user.email|gravatar(size='20')}}">&nbsp&nbsp{{current_user.name}}</a></li>
+            {% endif %}
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        {% if not logged_in.__dict__ %}
+
+        <a href="{{url_for('register')}}" class="get-started-btn">Get Started</a>
+
+      {% endif %}
+
+      </div>
+    </header>
+    <!-- End Header -->

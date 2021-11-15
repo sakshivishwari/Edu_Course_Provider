@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Learners</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{{url_for('static', filename='assets/img/online-lesson.png')}}" rel="icon" />
+
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="{{url_for('static', filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet" />
+    <link
+      href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}"
+      rel="stylesheet"
+    />
+    <link href="{{url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="{{url_for('static', filename='assets/css/style.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/css/form.css')}}" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <img  class=" logo" src="{{url_for('static', filename='assets/img/online-lesson.png')}}" alt="main-icon">
+        <h1 class="logo-text me-auto"><a href="#">Learners</a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+            <li><a href="{{url_for('courses')}}" class="active">Courses</a></li>
+
+            <li><a href="{{url_for('contact')}}">Contact</a></li>
+            {% if logged_in.__dict__ %}
+                <li><a href="{{url_for('logout')}}">Logout</a></li>
+              <li><a><img class="rounded-circle" src="{{current_user.email|gravatar(size='20')}}">&nbsp&nbsp{{current_user.name}}</a></li>
+            {% endif %}
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        {% if not logged_in.__dict__ %}
+
+        <a href="{{url_for('register')}}" class="get-started-btn">Get Started</a>
+
+      {% endif %}
+
+      </div>
+    </header>
+    <!-- End Header -->
+
+  <main id="main" data-aos="fade-in">
+      <!-- ======= Breadcrumbs ======= -->
+      <div class="breadcrumbs">
+        <div class="container">
+          <h2>Courses</h2>
+          <p>
+            This course is designed to start you on a path toward future studies
+            in web development and design, no matter how little experience or
+            technical knowledge you currently have. <br />In this course, we
+            will mostly talk about the front end web development skills and a
+            few back end techniques.
+          </p>
+        </div>
+      </div>
+      <!-- End Breadcrumbs -->
+
+      <!-- ======= Popular Courses Section ======= -->
+      <section id="popular-courses" class="courses">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Courses</h2>
+            <p>Popular Courses</p>
+          </div>
+
+          <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="course-item">
+                <img
+                  src="{{url_for('static', filename='assets/img/course-1.jpg')}}"
+                  style="padding: 10px; margin-left: 40px"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <div class="course-content">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mb-3
+                    "
+                  >
+                    <h4><a href="{{url_for('show_course', id=1)}}">View Course</a></h4>
+                  </div>
+
+                  <h3>Hypertext Markup Language</h3>
+                  <p>
+                    The HyperText Markup Language, or HTML is the standard
+                    markup language for documents designed to be displayed in a
+                    web browser.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Course Item-->
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+            >
+              <div class="course-item">
+                <img
+                  src="{{url_for('static', filename='assets/img/course-2.png')}}"
+                  style="width: 200px; padding: 10px; margin-left: 80px"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <div class="course-content">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mb-3
+                    "
+                  >
+                    <h4><a href="{{url_for('show_course', id=2)}}">View Course</a></h4>
+                  </div>
+
+                  <h3>Cascading Style Sheets</h3>
+                  <p>
+                    Cascading Style Sheets is a style sheet language used for
+                    describing the presentation of a document written in a
+                    markup language such as HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Course Item-->
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+            >
+              <div class="course-item">
+                <img
+                  src="{{url_for('static', filename='assets/img/course-3.jpg')}}"
+                  style="padding: 10px; margin-left: 40px"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <div class="course-content">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mb-3
+                    "
+                  >
+                    <h4><a href="{{url_for('show_course', id=3)}}">View Course</a></h4>
+                  </div>
+                  <h3>Javascript</h3>
+                  <p>
+                    JavaScript is high-level, often just-in-time compiled and
+                    multi-paradigm. It has dynamic typing, prototype-based
+                    object-orientation and first-class functions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Course Item-->
+          </div>
+          <div
+            class="row"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            style="margin-top: 3%"
+          >
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+            >
+              <div class="course-item">
+                <img
+                  src="{{url_for('static', filename='assets/img/course-4.jpg')}}"
+                  style="margin-left: 40px"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <div class="course-content">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mb-3
+                    "
+                  >
+                    <h4><a href="{{url_for('show_course', id=4)}}">View Course</a></h4>
+                  </div>
+
+                  <h3>React</h3>
+                  <p>
+                    React is a free and open-source front-end JavaScript library
+                    for building user interfaces or UI components.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Course Item-->
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+            >
+              <div class="course-item">
+                <img
+                  src="{{url_for('static', filename='assets/img/course-5.jpg')}}"
+                  style="margin-left: 40px"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <div class="course-content">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mb-3
+                    "
+                  >
+                    <h4><a href="{{url_for('show_course', id=5)}}">View Course</a></h4>
+                  </div>
+
+                  <h3>Angular</h3>
+                  <p>
+                    Angular is an application design framework and development
+                    platform for creating efficient and sophisticated
+                    single-page apps.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Course Item-->
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+            >
+              <div class="course-item">
+                <img
+                  src="{{url_for('static', filename='assets/img/course-6.jpg')}}"
+                  style="margin-left: 40px"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <div class="course-content">
+                  <div
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mb-3
+                    "
+                  >
+                    <h4><a href="{{url_for('show_course', id=6)}}">View course</a></h4>
+                  </div>
+
+                  <h3>Node JS</h3>
+                  <p>
+                    Node.js is an open-source, cross-platform, back-end
+                    JavaScript runtime environment that runs on the V8 engine
+                    and executes JavaScript code outside a web browser.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Course Item-->
+          </div>
+        </div>
+      </section>
+      <!-- End Popular Courses Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {% include 'footer.html' %}
