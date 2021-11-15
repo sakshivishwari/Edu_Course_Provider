@@ -1,0 +1,111 @@
+{% include 'course_pages/header.html' %}
+
+    <!-- Course-2 -->
+    <div class="course-details">
+      <div class="course-vedio">
+        <iframe
+          width="750"
+          height="500"
+          src="https://www.youtube.com/embed/yfoY53QXEnI"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="course-detail-content">
+        <h1 class="headings">CSS Introduction</h1>
+        <p>CSS is the language we use to style a Web page.</p>  <hr>
+        <h3 class="headings">What is CSS?</h3>
+        <ul>
+          <li>CSS stands for Cascading Style Sheets</li>
+          <li>
+            CSS describes how HTML elements are to be displayed on screen,
+            paper, or in other media
+          </li>
+          <li>
+            CSS saves a lot of work. It can control the layout of multiple web
+            pages all at once
+          </li>
+          <li>External stylesheets are stored in CSS files</li>
+        </ul>
+        <hr>
+        <h3 class="headings">Why Use CSS?</h3>
+        <p>
+          CSS is used to define styles for your web pages, including the design,
+          layout and variations in display for different devices and screen
+          sizes.
+        </p>
+      
+        <h5 class="headings">CSS Example</h5>
+        <p>
+          body { <br>
+             background-color: lightblue; <br>
+             } <br>
+             h1 { color: white; <br>
+                  text-align: center; } <br>
+              p { font-family: verdana;<br>
+             font-size: 20px; } <br>
+        </p>
+        <hr>
+        <h3 class="headings">CSS Solved a Big Problem</h3>
+        <p>
+          HTML was NEVER intended to contain tags for formatting a web page! <br>
+
+          HTML was created to describe the content of a web page, like:  <br>
+          &lth1&gtThis is a heading&lt/h1&gt    <br>
+          
+          &ltp&gtThis is a paragraph.&lt/p&gt  <br>
+          
+          When tags like &ltfont&gt, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. <br>
+           Development of large websites, where fonts and color information were added to every single page, became a long and expensive process. <br>
+          
+          To solve this problem, the World Wide Web Consortium (W3C) created CSS. <br>
+          
+          CSS removed the style formatting from the HTML page!  <br>
+
+
+        </p>
+        <hr>
+        <h3 class="headings">CSS Saves a Lot of Work!</h3>
+         <p>
+
+          The style definitions are normally saved in external .css files.  <br>
+
+          With an external stylesheet file, you can change the look of an entire website by changing just one file!
+         </p>
+         <hr>
+         <h3 class="headings">CSS Syntax</h3>
+         <p>A CSS rule consists of a selector and a declaration block.</p>
+         <p>
+          <img  class=" css-img"src="https://www.w3schools.com/css/img_selector.gif" alt="css syntax">
+         </p>
+           <p>
+            The selector points to the HTML element you want to style. <br> <br>
+
+            The declaration block contains one or more declarations separated by semicolons. <br> <br>
+            
+            Each declaration includes a CSS property name and a value, separated by a colon. <br> <br>
+            
+            Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces. <br>
+           </p>
+           <h5 class="headings">Example</h5>
+           <p>
+            In this example all &ltp&gt elements will be center-aligned, with a red text color:  <br>
+
+              p {   <br>
+                color: red; <br>
+                  text-align: center; <br>
+              }
+           </p>
+
+           <h5 class="headings">Example Explained</h5>
+           <ul>
+           <li>p is a selector in CSS (it points to the HTML element you want to style: &ltp&gt).</li>
+           <li>color is a property, and red is the property value</li>
+            <li>text-align is a property, and center is the property value</li>
+
+           </ul>
+           <button type="button"> <a href="https://www.w3schools.com/css/default.asp"> Learn More</a></button>
+          </div>
+    </div>
+
+    <!-- Footer start -->
+{% include 'course_pages/sfooter.html' %}

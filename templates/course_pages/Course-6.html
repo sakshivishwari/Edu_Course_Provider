@@ -1,0 +1,83 @@
+{% include 'course_pages/header.html' %}
+
+    <!-- Course-6 -->
+    <div class="course-details">
+      <div class="course-vedio">
+        <iframe
+          width="750"
+          height="500"
+          src="https://www.youtube.com/embed/fBNz5xF-Kx4"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="course-detail-content">
+        <h1 class="headings">Node.js Introduction</h1>
+        <p>Node.js is an open source server environment.</p>
+        <p>Node.js allows you to run JavaScript on the server.</p>
+        <hr>
+        <h3 class="headings">What is Node.js?</h3>
+        <ul>
+          <li>Node.js is an open source server environment</li>
+          <li>Node.js is free</li>
+          <li>
+            Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X,
+            etc.)
+          </li>
+          <li>Node.js uses JavaScript on the server</li>
+        </ul>
+        <hr>
+        <h3 class="headings">Why Node.js?</h3>
+        <p><strong>Node.js uses asynchronous programming!</strong></p>
+        <p>
+          A common task for a web server can be to open a file on the server and
+          return the content to the client.
+        </p>
+        <p>Here is how PHP or ASP handles a file request:</p>
+        <ol>
+          <li>Sends the task to the computer's file system.</li>
+          <li>Waits while the file system opens and reads the file.</li>
+          <li>Returns the content to the client.</li>
+          <li>Ready to handle the next request.</li>
+        </ol>
+
+        <p>Here is how Node.js handles a file request:</p>
+        <ol>
+          <li>Sends the task to the computer's file system.</li>
+          <li>Ready to handle the next request.</li>
+          <li>
+            When the file system has opened and read the file, the server
+            returns the content to the client.
+          </li>
+        </ol>
+        <p>
+          Node.js eliminates the waiting, and simply continues with the next
+          request.
+        </p>
+        <p>
+          Node.js runs single-threaded, non-blocking, asynchronously
+          programming, which is very memory efficient.
+        </p>
+        <hr>
+        <h3 class="headings">What Can Node.js Do?</h3>
+        <ul>
+          <li>
+            Node.js files contain tasks that will be executed on certain events
+          </li>
+          <li>
+            A typical event is someone trying to access a port on the serve
+          </li>
+          <li>
+            Node.js files must be initiated on the server before having any
+            effect
+          </li>
+          <li>Node.js files have extension ".js"</li>
+        </ul>
+
+
+        <button type="button"> <a href="https://www.w3schools.com/nodejs/nodejs_intro.asp"> Learn More</a></button>
+      </div>
+    </div>
+    <!-- End of Course-6 -->
+
+    <!-- footer -->
+{% include 'course_pages/footer.html' %}

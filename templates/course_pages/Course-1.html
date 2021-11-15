@@ -1,0 +1,112 @@
+{% include 'course_pages/header.html' %}
+    <!-- Course-1-------- -->
+
+    <div class="course-details">
+      <div class="course-vedio">
+        <iframe
+          width="750"
+          height="500"
+          src="https://www.youtube.com/embed/UB1O30fR-EE"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="course-detail-content">
+        <h1 class="headings">HTML Introduction</h1>
+        <p>HTML is the standard markup language for creating Web pages.</p>
+        <hr>
+        <h2 class="headings">What is HTML?</h2>
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language</li>
+          <li>HTML is the standard markup language for creating Web pages</li>
+          <li>HTML describes the structure of a Web page</li>
+          <li>HTML consists of a series of elements</li>
+          <li>HTML elements tell the browser how to display the content</li>
+          <li>
+            HTML elements label pieces of content such as "this is a heading",
+            "this is a paragraph", "this is a link", etc.
+          </li>
+        </ul>
+         <hr>
+        <h3 class="headings">HTML Documents</h3>
+        All HTML documents must start with a document type declaration: &lt!DOCTYPE html&gt. <br>
+
+        The HTML document itself begins with &lthtml&gt and ends with &lt/html&gt. <br>
+
+        The visible part of the HTML document is between &ltbody&gt and &lt/body&gt. <br>
+       <h5>Example</h5> 
+            &ltDOCTYPE html&gt <br>
+            &lthtml&gt <br>
+            &ltbody&gt <br>
+            &lth1&gtMy First Heading&lt/h1&gt <br>
+            &ltp&gtMy first paragraph.&lt/p&gt <br>
+            &lt/body&gt <br>
+            &lt/html&gt 
+ <hr>
+        <h3 class="headings">The &lt!DOCTYPE&gt Declaration</h3>
+        <p>
+          The &lt!DOCTYPE&gt declaration represents the document type, and helps browsers to display web pages correctly.
+           <br>
+          It must only appear once, at the top of the page (before any HTML tags).
+           <br>
+          The &lt!DOCTYPE&gt declaration is not case sensitive.
+            <br>
+           The &lt!DOCTYPE&gt declaration for HTML5 is: <br>
+           &lt!DOCTYPE html&gt
+        </p>
+        <hr>
+        <h3 class="headings">HTML Headings</h3>
+
+        <p>
+          HTML headings are defined with the &lth1&gt to &lth6&gt tags. <br>
+
+            &lth1&gt defines the most important heading. &lth6&gt defines the least important heading: <br>
+            
+            <h5>Example </h5>
+            
+            &lth1&gtThis is heading 1&lt/h1&gt <br>
+            &lth2&gtThis is heading 2&lt/h2&gt <br>
+            &lth3&gtThis is heading 3&lt/h3&gt  <br>
+            
+        </p>
+ <hr>
+        <h3 class="headings">HTML Paragraphs</h3>
+       <p>
+        HTML paragraphs are defined with the &ltp&gt tag:  <br>
+
+          <h5>Example</h5>
+          &ltp&gtThis is a paragraph.&lt/p&gt <br>
+          &ltp&gtThis is another paragraph.&lt/p&gt
+           </p>
+
+           <hr>
+           <h3 class="headings">HTML Links</h3>
+        <p>
+
+          HTML links are defined with the &lta&gt tag: <br>
+
+           <h5>Example</h5>
+            &lta href="https://www.w3schools.com"&gtThis is a link&lt/a&gt <br>
+            The link's destination is specified in the href attribute. <br>
+
+            Attributes are used to provide additional information about HTML elements. <br>
+
+            You will learn more about attributes in a later chapter.
+        </p>
+       <hr>
+        <h3 class="headings">HTML Images</h3>
+        <p>
+
+          HTML images are defined with the &ltimg&gt tag. <br>
+
+           The source file (src), alternative text (alt), width, and height are provided as attributes: <br>
+
+           <h5>Example</h5> 
+            &lt img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt
+        </p>
+ 
+         <button type="button"> <a href="https://www.w3schools.com/html/html_intro.asp"> Learn More</a></button>
+        
+      </div>
+    </div>
+<!----------------------------- footer---------------- -->
+{% include 'course_pages/footer.html' %}

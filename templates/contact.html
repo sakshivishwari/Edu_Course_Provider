@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Learners</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{{url_for('static', filename='assets/img/online-lesson.png')}}" rel="icon" />
+
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="{{url_for('static', filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet" />
+    <link
+      href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}"
+      rel="stylesheet"
+    />
+    <link href="{{url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="{{url_for('static', filename='assets/css/style.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static', filename='assets/css/form.css')}}" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <img  class=" logo" src="{{url_for('static', filename='assets/img/online-lesson.png')}}" alt="main-icon">
+        <h1 class="logo-text me-auto"><a href="index.html">Learners</a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+            <li><a href="{{url_for('courses')}}">Courses</a></li>
+
+            <li><a class="active" href="{{url_for('contact')}}">Contact</a></li>
+            {% if logged_in.__dict__ %}
+                <li><a href="{{url_for('logout')}}">Logout</a></li>
+              <li><a><img class="rounded-circle" src="{{current_user.email|gravatar(size='20')}}">&nbsp&nbsp{{current_user.name}}</a></li>
+            {% endif %}
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        {% if not logged_in.__dict__ %}
+
+        <a href="{{url_for('register')}}" class="get-started-btn">Get Started</a>
+
+      {% endif %}
+
+      </div>
+    </header>
+    <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Contact Us</h2>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div data-aos="fade-up">
+          <iframe
+
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d58875.796649932025!2d75.8624530585594!3d22.73800394067738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x396302af403406fb%3A0x5b50834b117f8bab!2sVijay%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh!3m2!1d22.7532848!2d75.8936962!5e0!3m2!1sen!2sin!4v1636894772876!5m2!1sen!2sin"
+            width="1500"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>
+                    Vijay Nagar <br />
+                    Indore, MadhyaPradesh <br />
+                    India
+                  </p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>bugsmashers@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 8264923756</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  {% include 'footer.html' %}
