@@ -1,0 +1,111 @@
+html, body{
+    height:100%;
+}
+
+label{
+    font-weight: bold;
+}
+
+input:focus, input{
+    outline: none;
+    border: 0;
+    background-color: #5fcf80;
+    font-size: 85%;
+}
+
+input {
+    border-bottom: 2px solid #fff;
+    width:100%;
+}
+
+@keyframes animation{
+    from {text-indent:0%;}
+    to {text-indent:-100%;}
+}
+
+form div{
+    position: relative;
+}
+
+.focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: 0.4s;
+ }
+
+.extra {
+    transition: text-indent 2s 0.4s ease;
+    opacity: 1;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+input:focus ~ .focus-border{
+    width: 100%;
+    transition: 0.4s;}
+
+.form-div{
+    position: relative;
+    top:50px;
+    width: 60%;
+    margin:auto;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow:10px 10px 50px grey;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+#par-div{
+    display:grid;
+    min-height:90vh;
+    place-items: center;
+    height: 100%;
+    position: relative;
+    margin: 15px 0;
+}
+
+.par-form{
+    background-color: #5fcf80;
+    height:100%;
+    width: 60%;
+    margin:0;
+}
+
+.img-par{
+    height:100%;
+    background-color: #fff;
+    width:40%;
+}
+
+.img-par img{
+    display: inline;
+    width:90%;
+    margin-top : 20%;
+}
+
+span a{
+    color: black;
+    font-size:15px;
+}
+
+@media screen and (max-width: 500px){
+    .form-div{
+        display:flex;
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .img-par, .par-form{
+        display:block;
+        width:100%;
+    }
+
+}
+
+
+
