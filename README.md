@@ -21,6 +21,7 @@ We designed a course to grow you from basics to professional.
 #### Backend
 <ul>
 <li>Flask</li>
+<li>Python</li>
 </ul>
 
 ## Developers
