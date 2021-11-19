@@ -9,6 +9,9 @@ We designed a course to grow you from basics to professional.
 <li>Create your own account</li>
 </ol>
 
+## Deployed Link OF Project
+https://bug-smashers.herokuapp.com/
+
 ## Technologies Used
 #### Frontend 
 <ul>
